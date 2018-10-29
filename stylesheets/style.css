@@ -1,0 +1,84 @@
+body{
+	background-image:url("../images/gradient.jpg");
+	background-color: black;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100%;
+}
+
+h1{
+	font-family: 'Julee', sans-serif;
+	font-size: 50px;
+	text-align: center;
+
+}
+h2{
+	font-family: 'Julee', sans-serif;
+	font-size: 40px;
+	text-align: center;
+
+}
+h3{
+	font-family: 'Julee', sans-serif;
+	font-size: 30px;
+	text-align: center;
+}
+
+#image-container{
+	display:flex;
+	justify-content: center;
+}
+
+
+
+.character{
+	width: 350px;
+	height: 350px;
+	margin-top:50px;
+	display: inline-block;
+	margin-right: auto;
+	margin-left: auto;
+}
+#ghost{
+	width: 136px;
+	height: 200px;
+	margin-top:50px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+
+}
+#frankenstein{
+	width: 200px;
+	height: 182px;
+	margin-top:50px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+#dracula{
+	width:124px;
+	height:162px;
+	margin-top:50px;
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+}
+
+#wolfman{
+	width: 227px;
+	height: 190px;
+	margin-top:50px;
+	margin-right:auto;
+	margin-left:auto;
+	display:block;
+}
+#zombie{
+	width: 149px;
+	height: 240px;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
+	display:block;
+}

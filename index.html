@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Assignment 9</title>
+	<link href="https://fonts.googleapis.com/css?family=Julee" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+</head>
+<body>
+	<h1>Are you ready to do the Mash?</h1>
+	<h2> The Monster Mash?</h2>
+	<h3> It's a graveyard smash...</h3>
+	<h3> Just hold down a key and the party lights will begin to flash!</h3>
+	<div id="image-container">
+		<div class="character">
+			<img id="frankenstein" src=images/frankenstein1.png alt="frankenstein clipart"> 
+		</div>
+		<div class="character">
+			<img id="dracula" src=images/dracula.png alt="dracula clipart"> 
+		</div>
+		<div class="character">
+			<img id="ghost" src=images/ghost.png alt="ghost clipart"> 
+		</div>
+		<div class="character">
+			<img id="zombie" src=images/zombie.png alt="zombie clipart"> 
+		</div>
+		<div class="character">
+			<img id="wolfman" src=images/wolfman.png alt="wolfman clipart"> 
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript">
+
+		var color=0;
+		var alpha=0.0;
+
+		document.addEventListener("keypress", function(event){
+			console.log(event);
+
+
+			var divs= document.getElementsByClassName("character");
+
+
+			for(var i=0; i<divs.length; i++){
+				divs[i].style.background='hsl('+color+',100%,50%)';
+				color +=2;
+			}
+	});
+	</script>
+
+</body>
+</html>

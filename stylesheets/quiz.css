@@ -1,0 +1,39 @@
+html{
+	height:100%
+}
+
+body{
+	height:100%;
+	margin:0;
+	background-repeat: no-repeat;
+	background-image: linear-gradient(to bottom right, cyan, pink)
+
+}
+
+h1{
+	font-family:'Monoton', serif;
+	text-align: center;
+
+}
+
+h2{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}
+
+button{
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 15px;
+	height: 20%;
+	width: 30%;
+	display: block;
+	margin-top: 50px;
+	margin-right: auto;
+	margin-bottom: 50px;
+	margin-left: auto;
+
+}
+#question{
+	font-family: 'Source Sans Pro', sans-serif;
+	text-align: center;
+}

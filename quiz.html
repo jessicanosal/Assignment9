@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello!</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/quiz.css">
+	<link href="https://fonts.googleapis.com/css?family=Monoton|Source+Sans+Pro" rel="stylesheet">
+
+	<script>
+		var questions = ["The Michael Myers mask is based on which actor's face?", "Where did the Matrix green code come from?", ];
+		var answersA = ["William Shatner", "Sushi Recipes"];
+		var answersB = ["John Travolta", "An Algorithm"];
+		var answersC = ["Harrison Ford", "A foreign script"];
+
+		var totalScore = 0;
+	</script>
+
+</head>
+
+
+
+<body>
+	<h1>MOVIE TRIVIA GAME</h1>
+	<h2>Total Score: <span id="score"></span></h2>
+
+
+	<h3 id="question"></h3>
+
+	<button id="A"></button>
+	<button id="B"></button>
+	<button id="C"></button>
+
+	<h4 id="YEAH"></h4>
+
+	<script>
+		var questionCounter = 0;
+		document.addEventListener("keypress", function(event) {
+			setUpQuestions();
+		});
+
+		document.getElementById("A").addEventListener("click", function(event) {
+			document.getElementById("YEAH").innerHTML = "YEAH!";
+			totalScore += 1;
+			questionCounter += 1;
+			setUpQuestions();
+		});
+
+		document.getElementById("B").addEventListener("click", function(event) {
+			document.getElementById("YEAH").innerHTML = "What kind of movie buff are you?";
+			questionCounter += 1;
+			setUpQuestions();
+		});
+
+		document.getElementById("C").addEventListener("click", function(event) {
+			document.getElementById("YEAH").innerHTML = "What kind of movie buff are you?";
+			questionCounter += 1;
+			setUpQuestions();
+		});
+
+
+		function setUpQuestions() {
+			document.getElementById('question').innerHTML = questions[questionCounter];
+
+			document.getElementById('A').innerHTML = answersA[questionCounter];
+			document.getElementById('B').innerHTML = answersB[questionCounter];
+			document.getElementById('C').innerHTML = answersC[questionCounter];
+			document.getElementById("score").innerHTML = totalScore;
+		}
+		
+	</script>
+
+</body>
+</html>
