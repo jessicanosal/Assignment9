@@ -32,6 +32,7 @@
 	<h4 id="YEAH"></h4>
 
 	<script>
+
 		var questionCounter = 0;
 		document.addEventListener("keypress", function(event) {
 			setUpQuestions();
@@ -59,12 +60,19 @@
 
 		function setUpQuestions() {
 			document.getElementById('question').innerHTML = questions[questionCounter];
-
 			document.getElementById('A').innerHTML = answersA[questionCounter];
 			document.getElementById('B').innerHTML = answersB[questionCounter];
 			document.getElementById('C').innerHTML = answersC[questionCounter];
 			document.getElementById("score").innerHTML = totalScore;
 		}
+		for(var i=0; i<questions.length; i++){
+			document.getElementById('A').innerHTML = answersA[questionCounter];
+			document.getElementById('B').innerHTML = answersB[questionCounter];
+			document.getElementById('C').innerHTML = answersC[questionCounter];
+			document.getElementById("score").innerHTML = totalScore;
+		}
+
+
 		
 	</script>
 
